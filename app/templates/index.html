@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <header>
+        <h1>Docify</h1>
+    </header>
+    <main>
+        <div>
+            <strong>Write once. Export everywhere.</strong>
+            <p>Docify helps you write and manage text effortlessly.</p>
+            <p>Use special syntax to structure your 
+                content, keep everything organized, and download your files in formats like 
+                <strong>PDF, TXT, Word, and more</strong>.
+            </p>
+            <p>
+                Whether you're writing notes,
+                documentation, or structured content,
+                Docify makes document creation simple, fast, and flexible.
+            </p>
+            <strong>Start writing with Docify.</strong>
+            <a href="{{ url_for('auth.register')}}">Register now</a>
+            <p>already registered?</p>
+            <a href="{{ url_for('auth.login')}}">Login</a>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+{% endblock %}
